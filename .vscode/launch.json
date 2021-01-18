@@ -5,13 +5,13 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "src/sparse{any}",
+      "name": "src file",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/build/src/sparse/${fileBasenameNoExtension}",
+      "program": "${workspaceFolder}/build/src/${fileBasenameNoExtension}",
       "args": [],
       "stopAtEntry": false,
-      "cwd": "${workspaceFolder}/build/src/sparse",
+      "cwd": "${workspaceFolder}/build/src",
       "environment": [],
       "externalConsole": false,
       "MIMode": "gdb",
@@ -21,26 +21,8 @@
           "text": "-enable-pretty-printing",
           "ignoreFailures": true
         }
-      ]
+      ],
+      "preLaunchTask": "build"
     },
-    {
-      "name": "benchmarks/sparse",
-      "type": "cppdbg",
-      "request": "launch",
-      "program": "${workspaceFolder}/build/benchmarks/sparse/bmark_sparse",
-      "args": [],
-      "stopAtEntry": false,
-      "cwd": "${workspaceFolder}/build/benchmarks/sparse",
-      "environment": [],
-      "externalConsole": false,
-      "MIMode": "gdb",
-      "setupCommands": [
-        {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-        }
-      ]
-    }
   ]
 }

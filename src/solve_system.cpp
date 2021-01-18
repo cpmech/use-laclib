@@ -20,7 +20,7 @@ void run(int argc, char **argv)
     auto ordering = mumps_string_to_ordering(args[2]);
 
     // read matrix
-    auto filename = matrix_name + ".mtx";
+    auto filename = "data/" + matrix_name + ".mtx";
     auto onebased = true;
     auto trip = read_matrix_market(filename, onebased);
 

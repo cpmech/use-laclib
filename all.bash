@@ -29,3 +29,6 @@ cmake -D A1_USE_INTEL=${USE_INTEL} \
 
 cd build
 make
+cd ..
+
+./build/src/solve_system
