@@ -1,6 +1,6 @@
 {
-  "name": "Laclib Docker",
-  "image": "laclib_open",
+  "name": "Laclib Open MPI",
+  "image": "laclib_open_mpi",
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash",
   },

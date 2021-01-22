@@ -3,7 +3,7 @@ set(LACLIB_INCLUDE_SEARCH_PATH
 )
 
 set(LACLIB_LIBRARY_SEARCH_PATH
-    /usr/local/lib
+    /usr/local/lib/laclib
 )
 
 find_path(LACLIB_INC laclib.h ${LACLIB_INCLUDE_SEARCH_PATH})

@@ -1,0 +1,25 @@
+{
+  Ignore dlopen
+  Memcheck:Leak
+  ...
+  fun:_dl_open
+  ...
+}
+
+{
+  Ignore Intel thing 1
+  Memcheck:Cond
+  fun:__I_MPI___intel_sse2_strncmp
+}
+
+{
+  Ignore Intel thing 2
+  Memcheck:Cond
+  fun:fi_getinfo@@FABRIC_1.3
+}
+
+{
+  Ignore Intel thing 3
+  Memcheck:Cond
+  fun:ofi_cq_readerr
+}
